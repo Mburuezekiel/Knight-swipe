@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Your regular CSS styles here */
+
+        /* Media query for screens up to 600px wide */
+        @media (max-width: 600px) {
+            /* Adjust styles for smaller screens here */
+        }
+
+        /* Media query for screens between 600px and 1024px wide */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            /* Adjust styles for medium-sized screens here */
+        }
+
+        /* Media query for screens 1024px and wider */
+        @media (min-width: 1025px) {
+            /* Adjust styles for larger screens here */
+        }
+    </style>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Knight Swipe</title>
+</head>
+<body>
+    <h1>Login to Your Knight Swipe Account</h1>
+    <form method="post" action="login_process.php">
+        <label for="username">Username or user_phone_number:</label>
+        <input type="text,number" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

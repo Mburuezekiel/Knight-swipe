@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Your regular CSS styles here */
+
+        /* Media query for screens up to 600px wide */
+        @media (max-width: 600px) {
+            /* Adjust styles for smaller screens here */
+        }
+
+        /* Media query for screens between 600px and 1024px wide */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            /* Adjust styles for medium-sized screens here */
+        }
+
+        /* Media query for screens 1024px and wider */
+        @media (min-width: 1025px) {
+            /* Adjust styles for larger screens here */
+        }
+    </style>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form method="POST" action="register.php"> <!-- Point to the register.php script -->
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+        </div>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+        </div>
+        
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" name="confirm_password" id="confirm_password">
+        </div>
+        <div>
+            <button type="submit" name="registerAndDeposit">Register and Deposit</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* styles.css */
+ /* Media query for screens up to 600px wide */
+ @media (max-width: 600px) {
+  /* Adjust styles for smaller screens here */
+}
+
+/* Media query for screens between 600px and 1024px wide */
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Adjust styles for medium-sized screens here */
+}
+
+/* Media query for screens 1024px and wider */
+@media (min-width: 1025px) {
+  /* Adjust styles for larger screens here */
+}
+
+/* Reset some default styles for consistency */
+body, h1, h2, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color and set text color */
+body {
+  background-color: #28b2b7;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+/* styles.css */
+
+/* Background image settings */
+body {
+  background-image: url('my pic.jpg'); /* Replace with your image file's path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+/* Rest of your existing styles... */
+
+
+/* Style the header */
+header {
+  background-color: #765959;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+  color: blue;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  color: blue;
+}
+
+nav a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+
+/* Style the sections */
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Style the footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color:black;
+  color: #fff;
+}
+/* styles.css */
+
+/* Style the "Knight Swipe" platform content */
+#knight-swipe {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Style each section within the "Knight Swipe" platform */
+.knight-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Style the Referrals section */
+.referrals-section {
+  background-color: #f0f0f0;
+}
+
+/* Style the Earnings section */
+.earnings-section {
+  background-color: #e3e3e3;
+}
+
+/* Style the Profile section */
+.profile-section {
+  background-color: #d6d6d6;
+}
+
+/* Style the Wallet section */
+.wallet-section {
+  background-color: #c9c9c9;
+}
+
+/* Define styles for section headings */
+.section-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+        /* Style the dashboard section */
+        .referrals {
+            color: black;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .earnings {
+            color: #28b2b7;
+            text-decoration: underline;
+            cursor: pointer;
+        }  
+        .profile{
+            color:black;
+            text-decoration: underline;
+             cursor: pointer;
+        }  
+        .settings{
+            color:black;
+            text-decoration: underline;
+             cursor: pointer;
+        }  
+        .wallet{
+            color:black;
+            text-decoration: underline;
+             cursor: pointer;
+        }  
+        

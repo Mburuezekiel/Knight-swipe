@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Your regular CSS styles here */
+
+        /* Media query for screens up to 600px wide */
+        @media (max-width: 600px) {
+            /* Adjust styles for smaller screens here */
+        }
+
+        /* Media query for screens between 600px and 1024px wide */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            /* Adjust styles for medium-sized screens here */
+        }
+
+        /* Media query for screens 1024px and wider */
+        @media (min-width: 1025px) {
+            /* Adjust styles for larger screens here */
+        }
+    </style>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wallet Balance</title>
+</head>
+<body>
+    <h1>Wallet Balance</h1>
+    <p>Your current balance: Ksh. 0.00</p>
+    <!-- Withdraw Funds Form -->
+<form id="withdraw-form">
+    <label for="withdraw-amount">Withdraw Amount:</label>
+    <input type="number" id="withdraw-amount">
+    <button type="button" onclick="withdrawFunds()">Withdraw</button>
+  </form>
+  
+  <script>
+  function withdrawFunds() {
+    const amount = parseFloat(document.getElementById('withdraw-amount').value);
+  
+    // Send a request to your backend to withdraw funds
+    // Include the user's phone number for authentication
+  
+    // Example: Using Fetch API
+    fetch('/withdraw', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        phone: 'user_phone_number', // Replace with the actual phone number
+        amount: amount,
+      }),
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          alert('Funds withdrawn successfully.');
+          // Update wallet balance displayed on the page
+        } else {
+          alert('Failed to withdraw funds.');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }
+  </script>
+  
+    <form action="wallet_action.php" method="post">
+        <label for="action">Select an action:</label>
+        <select id="action" name="action">
+            <option value="withdraw">Withdraw Funds</option>
+            <option value="hold">Hold Funds</option>
+        </select><br><br>
+
+        <label for="amount">Amount (Ksh.):</label>
+        <input type="number" id="amount" name="amount" step="0.01" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

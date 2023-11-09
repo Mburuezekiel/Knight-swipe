@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard - Knight Swipe</title>
+    <!-- Add your CSS and script includes here -->
+   
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+
+    <nav>
+        <!-- Add navigation links for various dashboard sections -->
+        <ul>
+            <li><a href="#referrals">Referrals</a></li>
+            <li><a href="#earnings">Earnings</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#settings">Settings</a></li>
+            <li><a href="#wallet">Wallet</a></li>
+        </ul>
+    </nav>
+
+    <section id="referrals">
+        <!-- Display referral information here -->
+        <div class="knight-section referrals-section">
+            <h2 class="section-heading">Referrals</h2>
+            <ul class="referral-list">
+                <!-- Referral members will be populated here -->
+            </ul>
+        </div>
+    </section>
+    <section id="earnings">
+        <!-- Display earnings and bonuses information here -->
+        <div class="knight-section earnings-section">
+            <h2 class="section-heading">Earnings and Bonuses</h2>
+            <div class="earnings-info">
+                <p><strong>Available Balance:</strong> <span class="balance-amount">ksh 0.00</span></p>
+                <h3>Bonuses Earned:</h3>
+                <ul class="bonus-list">
+                    <!-- Bonuses earned will be populated here -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="profile">
+        <!-- Display user profile and settings here -->
+       <div class="knight-section profile-section">
+    <h2 class="section-heading">My Profile</h2>
+    <div class="profile-info">
+        <!-- User profile information will be populated here -->
+    </div>
+</div>
+</section>
+<section id="wallet">
+    <div class="knight-section wallet-section">
+        <h2 class="section-heading">Your Wallet</h2>
+        <div class="wallet-info">
+    <!-- Display user's wallet information -->
+    <p>Your wallet balance:Ksh 0.00</p>
+    <!-- Display the unique referral link below the wallet section -->
+    <p>Your Referral Link: <span id="referral-link">YourUniqueReferralLinkHere</span></p>
+</div>
+
+<!-- JavaScript to populate the referral link -->
+<script>
+    // Replace 'YourUniqueReferralLinkHere' with the actual referral link generated on the server
+    var referralCode = '<?php echo $referralCode; ?>';
+    var referralLink = 'https://mburuezekiel.github.io/Knight-swipe/signup?ref=' + referralCode;
+
+    document.getElementById('referral-link').textContent = referralLink;
+</script>
+</section>
+<!-- Inside the Settings section of your dashboard -->
+<section id="settings">
+<div class="knight-section settings-section">
+    <h2 class="section-heading">Settings</h2>
+    <div class="settings-info">
+        <!-- User settings will be populated here -->
+    </div>
+</div>
+    </section>
+    
+
+    <!-- Add more dashboard sections as needed -->
+
+    <footer>
+        <p><a href="logout.php">Logout</a> | Contact Us: <a href="mailto:knightswipereferals@gmail.com">knightswipereferals@gmail.com</a></p>
+    </footer>
+    
+</body>
+</html>

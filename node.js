@@ -2,7 +2,7 @@
 const admin_phone_number = ["0714487081",  /* Add more admin phone numbers here */];
 
 // Phone number to be checked
-const user_phone_number = "user_phone_number"; // Replace with the user's phone number
+const user_phone_number = user_phone_number; // Replace with the user's phone number
 
 // Check if the userPhoneNumber is in the adminPhoneNumbers array
 if (admin_phone_number.includes(user_phone_number)) {
